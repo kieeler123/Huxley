@@ -1,4 +1,5 @@
 $(function(){
+  var timer;
   $(".container").fadeIn(2000);
   if(matchMedia("screen and (max-width:1168px)").matches){
     $(".menuIcon").click(function(){
@@ -35,7 +36,7 @@ $(function(){
   $(window).resize(function(){
     resizeFn();
   })
-  var timer = setInterval(function(){
+  timer = setInterval(function(){
     btn2();
   },5000);
   $(".btn, .sect").mouseenter(function(){
@@ -78,36 +79,68 @@ $(function(){
   var wid = $(".wrap_bg_up").width();
   var mar = $(".wrap_bg_up").css("margin-left");
   $(".wrap_bg").css("margin-left",parseInt(mar)-wid-20+"px");
-  $(".bottom_button .sect:nth-of-type(1)").click(function(){
-    $(this).addClass("once");
-    $(".bottom_button .sect:nth-of-type(2)").removeClass("once");
-    $(".bottom_button .sect:nth-of-type(3)").removeClass("once");
-    if($(".wrap_bg li").attr("class")=="two"){
-      btn1();
-    }else if($(".wrap_bg li").attr("class")=="three"){
-      btn1()*btn1();
+  $(".sect").click(function(){
+    clearInterval(timer);
+    if($(this).index() == 0){
+      if($(".wrap_bg li").attr("class") == "two"){
+        btn1();
+      }
+      else if($(".wrap_bg li").attr("class") == "three"){
+        btn1()*btn1();
+      }
+    }
+    else if($(this).index() == 1){
+      if($(".wrap_bg li").attr("class") == "one"){
+        btn2();
+      }
+      else if($(".wrap_bg li").attr("class") == "three"){
+        btn1();
+      }
+    }
+    else if($(this).index() == 2){
+      if($(".wrap_bg li").attr("class") == "one"){
+        btn2()*btn2();
+      }
+      else if($(".wrap_bg li").attr("class") == "two"){
+        btn2();
+      }
     }
   })
-  $(".bottom_button .sect:nth-of-type(2)").click(function(){
-    $(".bottom_button .sect:nth-of-type(1)").removeClass("once");
-    $(this).addClass("once");
-    $(".bottom_button .sect:nth-of-type(3)").removeClass("once");
-    if($(".wrap_bg li").attr("class")=="one"){
-      btn2();
-    }else if($(".wrap_bg li").attr("class")=="three"){
-      btn1();
-    }
-  })
-  $(".bottom_button .sect:nth-of-type(3)").click(function(){
-    $(".bottom_button .sect:nth-of-type(1)").removeClass("once");
-    $(".bottom_button .sect:nth-of-type(2)").removeClass("once");
-    $(this).addClass("once");
-    if($(".wrap_bg li").attr("class")=="one"){
-      btn2()*btn2();
-    }else if($(".wrap_bg li").attr("class")=="two"){
-      btn2();
-    }
-  })
+  // $(this).addClass("once");
+  //     $(this).prev().removeClass("once");
+  //     $(this).next().removeClass("once");
+  //     $(this).prev().prev().removeClass("once");
+  //     $(this).next().next().removeClass("once");
+  // $(".bottom_button .sect:nth-of-type(1)").click(function(){
+  //   $(this).addClass("once");
+  //   $(".bottom_button .sect:nth-of-type(2)").removeClass("once");
+  //   $(".bottom_button .sect:nth-of-type(3)").removeClass("once");
+  //   if($(".wrap_bg li").attr("class")=="two"){
+  //     btn1();
+  //   }else if($(".wrap_bg li").attr("class")=="three"){
+  //     btn1()*btn1();
+  //   }
+  // })
+  // $(".bottom_button .sect:nth-of-type(2)").click(function(){
+  //   $(".bottom_button .sect:nth-of-type(1)").removeClass("once");
+  //   $(this).addClass("once");
+  //   $(".bottom_button .sect:nth-of-type(3)").removeClass("once");
+  //   if($(".wrap_bg li").attr("class")=="one"){
+  //     btn2();
+  //   }else if($(".wrap_bg li").attr("class")=="three"){
+  //     btn1();
+  //   }
+  // })
+  // $(".bottom_button .sect:nth-of-type(3)").click(function(){
+  //   $(".bottom_button .sect:nth-of-type(1)").removeClass("once");
+  //   $(".bottom_button .sect:nth-of-type(2)").removeClass("once");
+  //   $(this).addClass("once");
+  //   if($(".wrap_bg li").attr("class")=="one"){
+  //     btn2()*btn2();
+  //   }else if($(".wrap_bg li").attr("class")=="two"){
+  //     btn2();
+  //   }
+  // })
   if($(".wrap_bg li").attr("class")=="one"){
     $(".bottom_button .sect:nth-of-type(1)").addClass("once");
     $(".bottom_button .sect:nth-of-type(2)").removeClass("once");
@@ -148,11 +181,11 @@ $(function(){
       }
     })
   //  console.log($(document).scrollTop(),$(".sec1News").offset().top);
-  $(".sec4Img").mouseenter(function(){
-    $(this).addClass("sca");
-  }).mouseleave(function(){
-    $(this).removeClass("sca");
-  })
+  // $(".sec4Img").mouseenter(function(){
+  //   $(this).addClass("sca");
+  // }).mouseleave(function(){
+  //   $(this).removeClass("sca");
+  // })
 })
   function goTop(){
     $('html, body').animate({scrollTop:0},1000);

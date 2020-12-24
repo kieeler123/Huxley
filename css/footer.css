@@ -1,0 +1,138 @@
+footer {
+  width: 100%;
+  height: 400px;
+  position: relative;
+  margin: 0 auto;
+  top: 200px;
+  font-size: 12px;
+  background-color: #f1f1f1;
+}
+
+footer b {
+  margin-right: 20px;
+}
+
+footer .footerAll {
+  width: 1377px;
+  height: 100%;
+  margin: 0 auto;
+}
+
+footer .footerAll .topAll {
+  width: 1377px;
+  position: absolute;
+}
+
+footer .footerAll .topAll .movTop {
+  width: 50px;
+  height: 50px;
+  background-color: gray;
+  text-align: center;
+  line-height: 50px;
+  font-size: 14px;
+  color: white;
+  font-weight: bold;
+  float: right;
+  cursor: pointer;
+}
+
+footer .footerAll .foolef {
+  float: left;
+  font-weight: 10;
+  margin-left: 5%;
+}
+
+footer .footerAll .foolef > b:after {
+  content: '';
+  display: inline-block;
+  width: 1px;
+  height: 16px;
+  position: relative;
+  left: 10px;
+  top: 2px;
+  background-color: #e3e3e3;
+}
+
+footer .footerAll .foolef address {
+  position: relative;
+  top: 20px;
+  line-height: 25px;
+  font-style: normal;
+}
+
+footer .footerAll .foolef .adv {
+  width: 750px;
+  height: 28px;
+  position: relative;
+  top: 60px;
+}
+
+footer .footerAll .foolef .adv > .ii {
+  width: 89px;
+  height: 28px;
+  float: left;
+  margin-right: 12px;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+footer .footerAll .foolef .adv > .ii:last-of-type {
+  margin-right: 0;
+}
+
+footer .footerAll .foolef .adv > .ii:last-of-type p {
+  line-height: 0;
+}
+
+footer .footerAll .foolef .adv > .ii:nth-of-type(1) {
+  background-image: url("../img/footerImg/adv1.png");
+}
+
+footer .footerAll .foolef .adv > .ii:nth-of-type(2) {
+  background-image: url("../img/footerImg/adv2.png");
+}
+
+footer .footerAll .foolef .adv > .ii:nth-of-type(3) {
+  background-image: url("../img/footerImg/adv3.png");
+}
+
+footer .footerAll .foolef .adv > .ii:nth-of-type(4) {
+  background-image: url("../img/footerImg/adv4.png");
+}
+
+footer .footerAll .foolef .adv > .ii:nth-of-type(5) {
+  width: 184px;
+  font-size: 12px;
+}
+
+footer .footerAll .foolef .adv > .ii:nth-of-type(6) {
+  width: 130px;
+  line-height: 28px;
+  text-align: center;
+  background-color: darkgray;
+}
+
+footer .footerAll .foolef .adv .copy {
+  position: relative;
+  top: 100px;
+}
+
+footer .footerAll .fooRig {
+  float: right;
+  margin-right: 10%;
+}
+
+footer .footerAll .fooRig em {
+  font-size: 18px;
+  font-style: normal;
+}
+
+footer .footerAll .fooRig dl dt {
+  float: left;
+  width: 60px;
+}
+
+footer .footerAll .fooRig dl dt, footer .footerAll .fooRig dl dd {
+  line-height: 30px;
+}

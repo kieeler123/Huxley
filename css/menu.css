@@ -1,0 +1,92 @@
+.wrap .container .bottom_button {
+  width: 100%;
+  height: 50px;
+  position: absolute;
+  z-index: 9999;
+  bottom: 170px;
+}
+
+.wrap .container .bottom_button .sect {
+  width: 20px;
+  height: 20px;
+  position: relative;
+  background-color: black;
+  float: left;
+  margin-right: 10px;
+  left: calc(50% - 5px);
+  border-radius: 10px;
+  top: calc(50% - 5px);
+  opacity: .4;
+}
+
+.wrap .container .top {
+  width: 100%;
+  height: 80px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  position: fixed;
+  z-index: 9999;
+}
+
+.wrap .container .top .logo {
+  width: 129px;
+  height: 51px;
+  background-image: url("../img/menuImg/logo.png");
+  margin-right: 20px;
+  margin-top: 16px;
+}
+
+.wrap .container .top .mainMenu {
+  width: 1377px;
+  height: 100%;
+  line-height: 40px;
+  position: relative;
+}
+
+.wrap .container .top .mainMenu > ul {
+  position: relative;
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+  -ms-flex-pack: end;
+  justify-content: flex-end;
+  line-height: 40px;
+  overflow: hidden;
+}
+
+.wrap .container .top .mainMenu > ul > li {
+  position: relative;
+  width: 10%;
+}
+
+.wrap .container .top .mainMenu > ul > li > a {
+  display: block;
+  position: relative;
+  line-height: 40px;
+  text-align: center;
+  text-transform: uppercase;
+  font-size: 16px;
+  color: grey;
+}
+
+.wrap .container .top .mainmenuBottom li:nth-of-type(6) a {
+  width: 36px;
+  height: 36px;
+  background-image: url("../img/menuImg/search.png");
+}
+
+.wrap .container .top .mainmenuBottom li:nth-of-type(7) a {
+  width: 36px;
+  height: 36px;
+  background-image: url("../img/menuImg/store.png");
+}
+
+.wrap .container .top .mainmenuBottom li a {
+  font-weight: bold;
+}
