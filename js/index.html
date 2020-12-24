@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+.wrap_bg_top{
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  overflow: hidden;
+}
+.wrap_bg{
+  width: 300%;
+  height: 100%;
+  display: flex;
+}
+.wrap_bg_up{
+  width: 100%;
+  height: 100%;
+}
+.wrap_bg_up .wrap_bg li{
+  display: inline-block;
+}
+.bottom_button{
+  width: 100%;
+  height: 50px;
+  position: absolute;
+  z-index: 9999;
+  bottom: 170px;
+}
+.bottom_button .sect{
+  width: 20px;
+  height: 20px;
+  position: relative;
+  background-color: black;
+  float: left;
+  margin-right: 10px;
+  left: calc(50% - 5px);
+  border-radius: 10px;
+  top: calc(50% - 5px);
+  opacity: .4;
+}
+.button_up{
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 40%;
+}
+.button_up > .btn:nth-of-type(1){
+  width: 100px;
+  height: 100px;
+  display: flex;
+  justify-content: center;
+  position: absolute;
+}
+.button_up > .btn:hover{
+  color: white;
+  opacity: .4;
+  transition-duration: 2s;
+}
+.button_up > .btn:nth-of-type(1)::before{
+  content: '';
+  width: 2px;
+  height: 50px;
+  background: black;
+  position: absolute;
+  transform: rotate(-45deg);
+  margin-top: 36px;
+}
+.button_up > .btn:nth-of-type(1)::after{
+  content: '';
+  width: 2px;
+  height: 50px;
+  background: black;
+  position: absolute;
+  transform: rotate(45deg);
+}
+.button_up > .btn:nth-of-type(2){
+  width: 100px;
+  height: 100px;
+  float: right;
+  display: flex;
+  justify-content: center;
+}
+.button_up > .btn:nth-of-type(2)::before{
+  content: '';
+  width: 2px;
+  height: 50px;
+  background: black;
+  position: absolute;
+  transform: rotate(45deg);
+  margin-top: 36px;
+}
+.button_up > .btn:nth-of-type(2)::after{
+  content: '';
+  width: 2px;
+  height: 50px;
+  background: black;
+  position: absolute;
+  transform: rotate(-45deg);
+}
+    </style>
+</head>
+<body>
+    <div class="bottom_button">
+        <div class="sect"></div>
+        <div class="sect"></div>
+        <div class="sect"></div>
+      </div>
+      <div class="wrap_bg_top">
+        <div class="wrap_bg_up">
+          <ul class="wrap_bg">
+            <li class="one"><a href="#"><img src="img/huxley_keyvisual_membership2009.jpg" alt=""></a></li>
+            <li class="two"><a href="#"><img src="img/huxley_keyvisual_moistfoundation.jpg" alt=""></a></li>
+            <li class="three"><a href="#"><img src="img/huxley_keyvisual20201005.jpg" alt=""></a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="button_up">
+        <div onclick="btn1()" class="btn" type="button" name="button"></div>
+        <div onclick="btn2()" class="btn" type="button" name="button"></div>
+      </div>
+      <div class="button_up">
+        <div onclick="btn1()" class="btn" type="button" name="button"></div>
+        <div onclick="btn2()" class="btn" type="button" name="button"></div>
+      </div>
+</body>
+</html>

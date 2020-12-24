@@ -1,0 +1,89 @@
+@media screen and (max-width: 1168px) {
+  .wrap {
+    width: 1168px;
+  }
+  .wrap .container {
+    width: 1168px;
+  }
+  .wrap .container .top {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: end;
+        -ms-flex-pack: end;
+            justify-content: flex-end;
+  }
+  .wrap .container .top .logo {
+    position: absolute;
+    left: 10%;
+  }
+  .wrap .container .top .menuIcon {
+    position: absolute;
+    width: 36px;
+    height: 36px;
+    background-image: url("../img/menuImg/menu.png");
+    cursor: pointer;
+    margin-right: 8%;
+    z-index: 9999;
+  }
+  .wrap .container .top .mainMenu {
+    position: absolute;
+    right: -200%;
+  }
+  .wrap .container .top .mainMenu .mainmenuTop {
+    right: 166px;
+  }
+  .wrap .container .top .mainMenu .mainmenuTop .mainmenuBottom {
+    right: 0;
+  }
+  .sec1News {
+    width: 100%;
+    position: relative;
+    left: 173.5px;
+  }
+  .sec1News .left .sec1News .right {
+    display: none;
+  }
+  section.sec2Best {
+    width: 1168px;
+    position: relative;
+    left: 50px;
+  }
+  section.sec3Movie {
+    width: 1168px;
+    margin-top: 700px;
+  }
+  section.sec3Movie iframe {
+    width: 1168px;
+    height: 100%;
+    top: 0;
+    left: 0;
+  }
+  section.sec3Movie .vdlt, section.sec3Movie .vdlb {
+    display: none;
+  }
+  section.sec4Insta {
+    width: 1168px;
+  }
+  footer {
+    width: 1168px;
+    height: 300px;
+    clear: both;
+  }
+  .foolef {
+    margin-left: 0;
+  }
+  .fooRig {
+    margin-right: 0;
+  }
+  .fooAll {
+    width: 1168px;
+  }
+  .fooRig {
+    float: left;
+  }
+  .movTop {
+    position: relative;
+    right: 230px;
+  }
+}
