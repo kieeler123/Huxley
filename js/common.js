@@ -171,12 +171,9 @@ $(function(){
       var thisOffset = $(this).offset();
       if( thisOffset.top <= thisScrollTop+1000 && thisScrollTop <= thisOffset.top + wHeight ){
         $(this).addClass("secleft");
-      }else{
-        $(this).removeClass("secleft");
-      }
-      if( thisOffset.top <= thisScrollTop+1500 && thisScrollTop <= thisOffset.top + wHeight ){
         $(this).addClass("sectop");
       }else{
+        $(this).removeClass("secleft");
         $(this).removeClass("sectop");
       }
     })

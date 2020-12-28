@@ -1,0 +1,29 @@
+/* addClass removeClass */
+.on {
+  background-color: white;
+}
+
+.once {
+  -webkit-transition: 1s;
+  transition: 1s;
+  opacity: 1 !important;
+}
+
+.secleft {
+  left: 0;
+  -webkit-transition: 1s;
+  transition: 1s;
+}
+
+.sectop {
+  top: 0;
+  -webkit-transition: 1s;
+  transition: 1s;
+}
+
+.sca {
+  -webkit-transform: scale(1.5);
+  transform: scale(1.5);
+  -webkit-transition: 1s;
+  transition: 1s;
+}

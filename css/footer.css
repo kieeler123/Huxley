@@ -39,7 +39,7 @@ footer .footerAll .topAll .movTop {
 footer .footerAll .foolef {
   float: left;
   font-weight: 10;
-  margin-left: 5%;
+  margin-left: 200px;
 }
 
 footer .footerAll .foolef > b:after {
@@ -120,7 +120,7 @@ footer .footerAll .foolef .adv .copy {
 
 footer .footerAll .fooRig {
   float: right;
-  margin-right: 10%;
+  margin-right: 200px;
 }
 
 footer .footerAll .fooRig em {
